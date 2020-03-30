@@ -21,7 +21,6 @@ router.get("/page/:id", auth, async (req, res) => {
 router.post(
   "/",
   [
-    auth,
     [
       check("name", "Name is required")
         .not()
